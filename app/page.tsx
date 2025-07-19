@@ -285,19 +285,7 @@ export default function DeveloperPortfolio() {
         </div>
       </nav>
 
-      {/* User IP Display */}
-      <div className="fixed top-20 right-4 z-40">
-        <div
-          className={`backdrop-blur-md rounded-lg border px-3 py-2 transition-all duration-300 ${
-            isDark ? "bg-gray-900/20 border-gray-700/30" : "bg-white/20 border-white/30"
-          } shadow-lg`}
-        >
-          <div className="flex items-center gap-2 text-sm">
-            <Wifi className="w-4 h-4" />
-            <span className="font-mono">{userIP}</span>
-          </div>
-        </div>
-      </div>
+
 
       {/* Terminal Content */}
       <main className="pt-32 pb-24 px-4">
