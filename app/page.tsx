@@ -63,7 +63,7 @@ export default function DeveloperPortfolio() {
       "drwxr-xr-x  2 irsyad irsyad 4096 Jan 19 09:37 .",
       "drwxr-xr-x  3 irsyad irsyad 4096 Jan 19 09:37 ..",
       "-rw-r--r--  1 irsyad irsyad   42 Jan 19 09:37 routing-switching.txt",
-      "-rw-r--r--  1 irsyad irsyad   38 Jan 19 09:37 advanced-tech.txt",
+      "-rw-r--r--  1 irsyad irsyad   38 Jan 19 09:37 advanced-Networking.txt",
       "-rw-r--r--  1 irsyad irsyad   45 Jan 19 09:37 service-provider.txt",
       "-rw-r--r--  1 irsyad irsyad   41 Jan 19 09:37 monitoring.txt",
       "-rw-r--r--  1 irsyad irsyad   48 Jan 19 09:37 platforms.txt",
@@ -103,14 +103,65 @@ export default function DeveloperPortfolio() {
         newHistory.push("up 2 days, 14:32, 1 user, load average: 0.15, 0.10, 0.05")
         break
       case "help":
-        newHistory.push("Available commands: whoami, pwd, ls, cat [file], clear, date, uptime, help")
-        newHistory.push("Files: about.txt, contact.txt, routing-switching.txt, advanced-tech.txt,")
-        newHistory.push("       service-provider.txt, monitoring.txt, platforms.txt")
+        newHistory.push("Available commands: whoami, pwd, ls, cat [file], clear, date, uptime, help, sudo rm -rf /")
+        newHistory.push("Files: about.txt, contact.txt, routing-switching.txt, advanced-networking.txt,")
+        newHistory.push("       service-provider.txt, monitoring.txt, platforms.txt, certifications.txt")
+        newHistory.push("       projects.txt skills/")
+
         break
       case "cat about.txt":
         newHistory.push("I'm a Network Engineer experienced in various projects. I specialize in designing,")
         newHistory.push("deploying, and managing network infrastructures, from enterprise WAN and data center network")
         newHistory.push("to service provider routing, as well as wired and wireless LAN environments.")
+        break
+      case "whoami":
+        newHistory.push("IRSYAD KHOIRUL ANWAR")
+        newHistory.push("Network Engineer")
+        break
+      case "sudo rm -rf /":
+        newHistory.push("I'm sorry, I can't let you do that. This is a portfolio website!")
+        break
+      case "ls -la skills/":
+        newHistory.push("drwxr-xr-x  2 irsyad irsyad 4096 Jan 19 09:37 .")
+        newHistory.push("drwxr-xr-x  3 irsyad irsyad 4096 Jan 19 09:37 ..")
+        newHistory.push("-rw-r--r--  1 irsyad irsyad   42 Jan 19 09:37 routing-switching.txt")
+        newHistory.push("-rw-r--r--  1 irsyad irsyad   38 Jan 19 09:37 advanced-networking.txt")
+        newHistory.push("-rw-r--r--  1 irsyad irsyad   45 Jan 19 09:37 service-provider.txt")
+        newHistory.push("-rw-r--r--  1 irsyad irsyad   41 Jan 19 09:37 monitoring.txt")
+        newHistory.push("-rw-r--r--  1 irsyad irsyad   48 Jan 19 09:37 platforms.txt")  
+        break
+      case "ls skills":
+      case "ls skills/":
+        newHistory.push("routing-switching.txt");
+        newHistory.push("advanced-networking.txt");
+        newHistory.push("service-provider.txt");
+        newHistory.push("monitoring.txt");
+        newHistory.push("platforms.txt");
+        break;
+      case "ls":
+        newHistory.push("about.txt")
+        newHistory.push("contact.txt")
+        newHistory.push("skills/")
+        newHistory.push("projects.txt")
+        newHistory.push("certifications.txt")
+        break
+      case "cat certifications.txt":
+        newHistory.push("• JNCIS-SP Routing and Switching")
+        newHistory.push("• JNCIA-Junos")
+        newHistory.push("• CCNA Training")
+        newHistory.push("• APNIC & IDNIC Training Series - 2022 & 2023")
+        break
+      case "cat projects.txt":
+        newHistory.push("• IXP Implementation (GPMIX) - Lampung's First Community IXP")
+        newHistory.push("• Core Network Migration")
+        newHistory.push("• BGP Peering Infrastructure (Google AS15169 & Meta AS32934)")
+        newHistory.push("• Dual-Stack IPv4/IPv6 Migration")
+        newHistory.push("• DNS Security Overhaul (RPZ, DoT/DoH)")
+        newHistory.push("• Content Caching Infrastructure (GGC & MNA Deployment)")
+        newHistory.push("• FTTH Network Redesign (GPON OLT Systems)")
+        newHistory.push("• MPLS Traffic Engineering & Route Optimization")
+        newHistory.push("• Network Automation Framework")
+        newHistory.push("• Data Center Deployment (Equinix SG3, NTT Jakarta , CDCI)")
         break
       case "cat contact.txt":
         newHistory.push("Email: hallo@irsyad.eu")
@@ -129,8 +180,8 @@ export default function DeveloperPortfolio() {
         newHistory.push("• STP (PVST/RSTP/MSTP)")
         newHistory.push("• VRRP, Multicast (IGMP, PIM)")
         break
-      case "cat advanced-tech.txt":
-        newHistory.push("=== Advanced Technologies ===")
+      case "cat advanced-networking.txt":
+        newHistory.push("=== Advanced Networking ===")
         newHistory.push("• MPLS (LDP, RSVP-TE), MPLS-TE")
         newHistory.push("• L2VPN, L3VPN")
         newHistory.push("• EVPN (MPLS & VXLAN), VXLAN")
@@ -307,11 +358,11 @@ export default function DeveloperPortfolio() {
                   <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
                   <div className="w-3 h-3 rounded-full bg-green-500"></div>
                 </div>
-                <span className="font-mono text-sm ml-4">irsyad@portfolio:~$</span>
+                <span className="font-mono text-sm ml-4">irsyad.eu@portofolio:~$</span>
               </div>
               <div className="flex items-center gap-2 text-sm">
                 <MapPin className="w-4 h-4" />
-                <span>Warsaw, PL</span>
+                <span>Lampung, ID</span>
               </div>
             </div>
 
@@ -368,13 +419,16 @@ export default function DeveloperPortfolio() {
             >
               <h3 className="font-mono text-lg mb-4">$ cat projects.txt</h3>
               <div className="space-y-2 font-mono text-sm">
-                <div>• Network Automation Suite</div>
-                <div>• IPv6 Migration</div>
-                <div>• Security Monitoring Dashboard</div>
-                <div>• Infrastructure as Code Templates</div>
-                <div>• API Gateway Implementation</div>
-                <div>• BGP Route Optimization Tool</div>
-                <div>• MPLS Traffic Engineering</div>
+                <div>• IXP Implementation (GPMIX) - Lampung's First Community IXP</div>
+                <div>• Core Network Migration</div>
+                <div>• BGP Peering Infrastructure (Google AS15169 & Meta AS32934)</div>
+                <div>• Dual-Stack IPv4/IPv6 Migration</div>
+                <div>• DNS Security Overhaul (RPZ, DoT/DoH) / Trustpositif</div>
+                <div>• Content Caching Infrastructure (GGC & MNA Deployment)</div>
+                <div>• FTTH Network Redesign (GPON OLT Systems)</div>
+                <div>• MPLS Traffic Engineering & Route Optimization</div>
+                <div>• Network Automation Framework</div>
+                <div>• Data Center Deployment (Equinix SG3, NTT Jakarta, CDCI)</div>
               </div>
             </div>
 
