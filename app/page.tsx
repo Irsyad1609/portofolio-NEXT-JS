@@ -152,7 +152,7 @@ export default function DeveloperPortfolio() {
         newHistory.push("• APNIC & IDNIC Training Series - 2022 & 2023")
         break
       case "cat projects.txt":
-        newHistory.push("• IXP Implementation (GPMIX) - Lampung's First Community IXP")
+        newHistory.push("• IXP Implementation (GPMIX) - Lampung's Community IXP")
         newHistory.push("• Core Network Migration")
         newHistory.push("• BGP Peering Infrastructure (Google AS15169 & Meta AS32934)")
         newHistory.push("• Dual-Stack IPv4/IPv6 Migration")
@@ -419,7 +419,7 @@ export default function DeveloperPortfolio() {
             >
               <h3 className="font-mono text-lg mb-4">$ cat projects.txt</h3>
               <div className="space-y-2 font-mono text-sm">
-                <div>• IXP Implementation (GPMIX) - Lampung's First Community IXP</div>
+                <div>• IXP Implementation (GPMIX) - Lampung's Community IXP</div>
                 <div>• Core Network Migration</div>
                 <div>• BGP Peering Infrastructure (Google AS15169 & Meta AS32934)</div>
                 <div>• Dual-Stack IPv4/IPv6 Migration</div>
