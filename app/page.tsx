@@ -4,7 +4,7 @@ import type React from "react"
 
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
-import { Moon, Sun, User, FileText, Mail, Terminal, Wifi, MapPin, ExternalLink } from "lucide-react"
+import { Moon, Sun, User, FileText, Mail, Terminal, Wifi, MapPin, ExternalLink, Globe } from "lucide-react"
 import Link from "next/link"
 
 export default function DeveloperPortfolio() {
@@ -278,9 +278,9 @@ export default function DeveloperPortfolio() {
               <Link href="/blog" className="hover:opacity-70 transition-opacity">
                 Blog
               </Link>
-              <button onClick={() => scrollToSection("contact")} className="hover:opacity-70 transition-opacity">
-                Contact
-              </button>
+              <a href="https://as205018.net/" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity font-semibold">
+                AS205018
+              </a>
               <Button variant="ghost" size="sm" onClick={toggleTheme} className="p-2">
                 {isDark ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
               </Button>
@@ -319,15 +319,15 @@ export default function DeveloperPortfolio() {
                 <span className="text-xs">Blog</span>
               </Button>
             </Link>
-            <Button
-              variant="ghost"
-              size="sm"
-              className="flex flex-col items-center gap-1"
-              onClick={() => scrollToSection("contact")}
+            <a
+              href="https://as205018.net/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-col items-center gap-1 hover:opacity-70 transition-opacity"
             >
-              <Mail className="w-4 h-4" />
-              <span className="text-xs">Contact</span>
-            </Button>
+              <Globe className="w-4 h-4" />
+              <span className="text-xs">AS205018</span>
+            </a>
             <Button variant="ghost" size="sm" onClick={toggleTheme} className="flex flex-col items-center gap-1">
               {isDark ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
               <span className="text-xs">Theme</span>
@@ -428,7 +428,7 @@ export default function DeveloperPortfolio() {
                 <div>• FTTH Network Redesign (GPON OLT Systems)</div>
                 <div>• MPLS Traffic Engineering & Route Optimization</div>
                 <div>• Network Automation Framework</div>
-                <div>• Data Center Deployment (Equinix SG3, NTT Jakarta, CDCI)</div>
+                <div>• Data Center Deployment </div>
               </div>
             </div>
 
